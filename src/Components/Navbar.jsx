@@ -11,7 +11,7 @@ const Navbar = () => {
             </div>
             <div className="logo flex items-center gap-x-2">
                 <img src={userIcon} alt="" />
-                <button className="text-white rounded-none bg-[#403F3F] px-8 py-2">Login</button>
+                <Link to={'/auth/login'} className="text-white rounded-none bg-[#403F3F] px-8 py-2">Login</Link>
             </div>
         </div>
     );

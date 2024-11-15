@@ -36,7 +36,7 @@ const NewsCard = ({ News }) => {
 
             {/* Thumbnail Image */}
             <img
-                className="h-[500px] object-cover"
+                className="h-[500px] object-cover p-3"
                 src={thumbnail_url}
                 alt={title}a
             />
