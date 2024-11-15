@@ -25,12 +25,12 @@ const Router = createBrowserRouter([
         ]
     },
     {
-        path: "/news",
+        path: "/news/:id",
         element: <h1>News Layout</h1>
     },
     {
         path: "/auth",
-        element:<AuthLayOut></AuthLayOut>,
+        element: <AuthLayOut></AuthLayOut>,
         children: [
             {
                 path: '/auth/login',
