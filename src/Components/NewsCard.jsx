@@ -37,9 +37,9 @@ const NewsCard = ({ News }) => {
 
             {/* Thumbnail Image */}
             <img
-                className="h-[500px] object-cover p-3"
+                className="max-h-[700px]  p-3"
                 src={thumbnail_url}
-                alt={title}a
+                alt={title}
             />
 
             {/* Content Section */}

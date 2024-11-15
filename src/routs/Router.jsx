@@ -5,6 +5,7 @@ import CatagoryNews from "../pagas/CatagoryNews";
 import AuthLayOut from "../layouts/AuthLayOut";
 import Login from "../pagas/Login";
 import Register from "../pagas/Register";
+import NewsDitals from "../pagas/NewsDitals";
 
 
 const Router = createBrowserRouter([
@@ -26,7 +27,8 @@ const Router = createBrowserRouter([
     },
     {
         path: "/news/:id",
-        element: <h1>News Layout</h1>
+        element: <NewsDitals></NewsDitals>,
+        loader: ({params}) => fetch(`https://openapi.programming-hero.com/api/news/${params.id}`)
     },
     {
         path: "/auth",
